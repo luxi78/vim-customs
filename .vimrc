@@ -1,0 +1,70 @@
+syntax on
+set fileencodings=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set fileformats=unix
+"set encoding=prc
+set encoding=utf-8
+
+set clipboard=unnamed
+
+set ignorecase
+set smartcase
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoread
+set hlsearch
+
+" Enable filetype plugin
+filetype plugin on
+filetype indent on
+
+
+"nmap <C-\>s :Gtags -s <C-R>=expand("<cword>")<CR><CR>	
+"查找定义
+nmap <C-\>g :Gtags <C-R>=expand("<cword>")<CR><CR>	
+"查找引用
+nmap <C-\>r :Gtags -r <C-R>=expand("<cword>")<CR><CR>	
+"grep方式查找
+nmap <C-\>e :Gtags -g <C-R>=expand("<cword>")<CR><CR>	
+let g:Gtags_OpenQuickfixWindow = 2
+let g:Gtags_Auto_Update = 1
+map <C-n> :lnf<CR>
+map <C-p> :lp<CR>
+nmap gn :cn<CR>	
+nmap gN :cp<CR>	
+
+"Grep 搜索当前文件下面的关键词
+"nmap <F3> :Grep <C-R>=expand("<cword>") %<CR><CR>	
+nmap <F6> :Grep \<<cword>\> %<CR><CR>
+
+nnoremap <silent><F12> :A<CR>
+
+"LookupFile的设置
+if filereadable("./filenametags")
+    let g:LookupFile_TagExpr = '"./filenametags"'
+endif
+"nmap <F6> :LUTags \<<cword>\><CR><CR> 这样为什么不行呢？？？
+nnoremap ,lf :LUTags <C-R>=expand("<cword>")<CR><CR>
+
+
+"用于tagbar的设置
+let g:tagbar_left=1
+nmap <F8> :TagbarToggle<CR>
+
+"用于eclim的设置
+let g:EclimJavaSearchSingleResult='edit'
+nmap <F3> :JavaSearch<CR>
+let g:EclimCSearchSingleResult='edit'
+nmap <F4> :CSearch<CR>
+
+
+"for gvim
+set guifont=ProFontWindows\ 9
+color desert 
+set guioptions=aegimLt
+
+
+nmap * *N
