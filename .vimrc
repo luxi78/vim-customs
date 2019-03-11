@@ -68,3 +68,15 @@ set guioptions=aegimLt
 
 
 nmap * *N
+
+
+call plug#begin('~/.vim/plugged')
+Plug 'majutsushi/tagbar'
+Plug 'vim-scripts/lookupfile'
+Plug 'vim-scripts/genutils'
+Plug 'vim-scripts/Visual-Mark'
+Plug 'vim-scripts/taglist.vim'
+Plug 'vim-scripts/gtags.vim'
+Plug 'vim-scripts/grep.vim'
+Plug 'vim-scripts/a.vim'
+call plug#end()
