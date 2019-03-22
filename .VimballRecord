@@ -1,3 +1,0 @@
-tagbar.vmb: call delete('/Users/luxee/.vim/README.md')|call delete('/Users/luxee/.vim/autoload/tagbar.vim')|call delete('/Users/luxee/.vim/doc/tagbar.txt')|call delete('/Users/luxee/.vim/plugin/tagbar.vim')|call delete('/Users/luxee/.vim/syntax/tagbar.vim')
-tagbar.vmb: call delete('/Users/luxee/.vim/README.md')|call delete('/Users/luxee/.vim/autoload/tagbar.vim')|call delete('/Users/luxee/.vim/doc/tagbar.txt')|call delete('/Users/luxee/.vim/plugin/tagbar.vim')|call delete('/Users/luxee/.vim/syntax/tagbar.vim')
-tagbar.vmb: call delete('/Users/luxee/.vim/README.md')|call delete('/Users/luxee/.vim/autoload/tagbar.vim')|call delete('/Users/luxee/.vim/doc/tagbar.txt')|call delete('/Users/luxee/.vim/plugin/tagbar.vim')|call delete('/Users/luxee/.vim/syntax/tagbar.vim')
