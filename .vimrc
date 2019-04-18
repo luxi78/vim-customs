@@ -19,6 +19,9 @@ set hlsearch
 
 " Enable filetype plugin
 filetype plugin on
+
+au BufEnter,BufRead *.conf setf dosini
+
 filetype indent on
 
 
