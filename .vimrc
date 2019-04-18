@@ -79,4 +79,5 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/gtags.vim'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/a.vim'
+Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
