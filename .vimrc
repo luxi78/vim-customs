@@ -5,6 +5,8 @@ set fileformats=unix
 "set encoding=prc
 set encoding=utf-8
 
+set mouse-=a
+
 set clipboard=unnamed
 
 set ignorecase
