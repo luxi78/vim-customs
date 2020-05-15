@@ -5,14 +5,16 @@ set fileformats=unix
 "set encoding=prc
 set encoding=utf-8
 
+set mouse-=a
+
 set clipboard=unnamed
 
 set ignorecase
 set smartcase
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set autoread
 set hlsearch
