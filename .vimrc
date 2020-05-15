@@ -89,4 +89,5 @@ Plug 'vim-scripts/a.vim'
 Plug 'chr4/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'leafgarland/typescript-vim'
+Plug 'udalov/kotlin-vim'
 call plug#end()
