@@ -19,9 +19,20 @@ set expandtab
 set autoread
 set hlsearch
 
+" 进入插入模式下的光标形状
 let &t_SI.="\e[5 q"
-let &t_SR.="\e[4 q"
+
+" 进入替换模式下的光标形状
+let &t_SR.="\e[3 q"
+
+" 从插入模式或替换模式下退出，进入普通模式后的光标形状
 let &t_EI.="\e[1 q"
+
+" 进入vim时，设置普通模式下的光标形状
+autocmd VimEnter * silent !echo -ne "\e[1 q"
+
+" 离开vim后，恢复shell模式下的光标形状
+autocmd VimLeave * silent !echo -ne "\e[1 q"
 
 " Enable filetype plugin
 filetype plugin on
