@@ -18,6 +18,7 @@ set shiftwidth=2
 set expandtab
 set autoread
 set hlsearch
+set backupcopy=yes 
 
 " 进入插入模式下的光标形状
 let &t_SI.="\e[5 q"
@@ -103,4 +104,5 @@ Plug 'chr4/nginx.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'udalov/kotlin-vim'
+Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
