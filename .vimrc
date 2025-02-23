@@ -105,4 +105,5 @@ Plug 'ekalinin/Dockerfile.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'udalov/kotlin-vim'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'cespare/vim-toml'
 call plug#end()
